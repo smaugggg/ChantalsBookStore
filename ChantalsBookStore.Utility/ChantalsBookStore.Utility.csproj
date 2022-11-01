@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChantalsBookStore.DataAccess\ChantalsBookStore.DataAccess.csproj" />
+    <ProjectReference Include="..\ChantalsBookStore.Models\ChantalsBookStore.Models.csproj" />
+    <ProjectReference Include="..\ChantalsBookStore\ChantalsBookStore.csproj" />
+  </ItemGroup>
+
+</Project>
