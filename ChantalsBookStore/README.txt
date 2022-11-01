@@ -37,3 +37,18 @@ Assignment 2
 
 1055 - I'm having a lot of errors saying that models doesn't exist in the namespace/missing a reference. 
 	   I'm going to make a github repo and commit what I have but I'll have to get help here cause I've tried a few things to no avail
+
+1113 - Restarting the classes turned out to be the right choise
+		I was able to recreate them and pay closer attention to the ppts provided
+		Everything appears to be working at the moment. Running/Building to make sure.
+
+1120 - Currently getting 2 Errors about package downgrades. 
+		https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1605?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(NU1605)%26rd%3Dtrue
+	   Trying to figure out how to fix it, but I don't really understand.
+
+1136 - Got the packages downgraded to 3.1.16 to resolve the last two errors I had using the package manager
+		Slide 35 Complete
+
+1141 - Created the Customers Area and updated the routes in Startup.cs
+		It's getting late so I'll have to work on this more at home/Thursday. 
+		Committing to Github before leaving 
