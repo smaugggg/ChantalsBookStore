@@ -60,3 +60,4 @@ Assignment 2
 		Made the changes to the dropdown menu button as needed, but I'll have to check tomorrow morning. 
 0013 - Did everything through moving _ViewImports and _ViewStart to the Customers Area
 		It runs now and appears to work. Lovely!
+0016 - Completed Part 1! Ready to show Andrew tomorrow and get to work on Part 2!
