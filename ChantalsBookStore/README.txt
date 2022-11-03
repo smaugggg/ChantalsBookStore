@@ -52,3 +52,11 @@ Assignment 2
 1141 - Created the Customers Area and updated the routes in Startup.cs
 		It's getting late so I'll have to work on this more at home/Thursday. 
 		Committing to Github before leaving 
+
+	20221103
+0001 - Good evening. 
+		I cloned the repo to my home computer to get some work done. Lets have a party. 
+0005 - IT won't run on my home computer but it was running no problem at school. 
+		Made the changes to the dropdown menu button as needed, but I'll have to check tomorrow morning. 
+0013 - Did everything through moving _ViewImports and _ViewStart to the Customers Area
+		It runs now and appears to work. Lovely!
