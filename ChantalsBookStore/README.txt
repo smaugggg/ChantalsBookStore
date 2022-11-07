@@ -105,7 +105,15 @@ Assignment 2
 
 2028 - I guess it just doesn't work...
 		I need to ask Andrew about this, but with funeral stuff idk if I'll see him in person
+		I think the frustrating thing about the errors I'm getting are that the UnitOfWork files aren't showing any errors
+		It's just trying to use those that are causing it. 
+2036 - Slide 16 also needs JavaScript from a mystery file in the assignment 2 files folder. 
+		Without the .txt files referenced I'm not sure what more I can do tonight.
+2106 - I think I found the problem in my CategoryRepository files. Took my long enough RIGHT
+
 			
 
 TO-DO
 	Views > Category > Index.cshtml -- modify generic HTML from the Category Index View text file on blackboard.
+	Views > Category > Index.cshtml -- Delete it and add the JavaScript from the Assignment 2 files folder in to the wwwroot/js folder
+										Note the div is now in the return portion of the category.js file.

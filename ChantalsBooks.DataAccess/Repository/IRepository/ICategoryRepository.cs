@@ -4,7 +4,7 @@ using System.Text;
 using ChantalsBooks.Models;
 
 namespace ChantalsBooks.DataAccess.Repository.IRepository {
-    public interface ICategoryRepository {
+    public interface ICategoryRepository : IRepository<Category> {
         void Update(Category category);
     }
 }

@@ -19,6 +19,36 @@ namespace ChantalsBookStore.Areas.Admin.Controllers {
             return View();
         }
 
+        // the errors here have to do with the UnitOfWork stuff and I don't know whats going on with that
+        public IActionResult Upsert(int id) {
+            Category category = new Category();
+            if (id == null) {
+                return View(category);
+            }
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if(category == null) {
+                return NotFound();
+            }
+            return View();
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category) {
+            if(ModelState.IsValid) {
+                if(category.Id == 0) {
+                    _unitOfWork.Category.Add(category);
+                } else {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }
+
+
         // API calls here
         # region API CALLS
         [HttpGet]

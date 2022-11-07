@@ -26,5 +26,29 @@ namespace ChantalsBooks.DataAccess.Repository {
                 _db.SaveChanges();
             }
         }
+
+        public void Add(Category entity) {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Category> GetAll(Expression<Func<Category, bool>> filter = null, Func<IQueryable<Category>, IOrderedQueryable<Category>> orderby = null, string includeProperties = null) {
+            throw new NotImplementedException();
+        }
+
+        public Category GetFirstOrDefault(Expression<Func<Category, bool>> filter = null, string includeProperties = null) {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(Category entity) {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveRange(IEnumerable<Category> entity) {
+            throw new NotImplementedException();
+        }
+
+        Category IRepository<Category>.Get(int id) {
+            throw new NotImplementedException();
+        }
     }
 }
