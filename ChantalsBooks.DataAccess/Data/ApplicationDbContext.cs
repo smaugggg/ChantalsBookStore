@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using ChantalsBooks.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ChantalsBookStore.DataAccess.Data
-{
-    public class ApplicationDbContext : IdentityDbContext
-    {
+namespace ChantalsBookStore.DataAccess.Data {
+    public class ApplicationDbContext : IdentityDbContext {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
+            : base(options) {
         }
+
+        public DbSet<Category> Categories { get; set; }
     }
 }

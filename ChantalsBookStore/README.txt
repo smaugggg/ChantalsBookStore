@@ -61,3 +61,27 @@ Assignment 2
 0013 - Did everything through moving _ViewImports and _ViewStart to the Customers Area
 		It runs now and appears to work. Lovely!
 0016 - Completed Part 1! Ready to show Andrew tomorrow and get to work on Part 2!
+
+
+	20221106
+1713 - Beginning Part 2. Built solution, confirmed no errors:
+		========== Build: 4 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+1716 - Attempted to add migration per ppt. Wrong default project selected as predicted!
+1717 - Cute 'lil migration created! : BookstoreMigration000.cs
+1718 - Database updated per ppt. Build succeeded/done.
+		Application runs!
+1722 - Created the Category model and added the migration for it: AddCategoryToDb.cs
+1735 - Created the IRepository Interface. 
+1905 - Took a break to eat and now I'm back. 
+		Was having some issues with the Repository class on slide 7.
+		It appeared that for some reasing the using statement into the data folder wasn't working. 
+		I tried multiple things:
+			Moving the DbContext to another folder of a different name. 
+			Copying the contents of DbContext and making another one in a different folder. 
+			Still nothing. 
+		So now I've moved it outside inthe the base .DataAccess project and I'm going to create the Repository class and see what happens I guess. 
+1910 - So I wrote out what it said on Slide 7 regarding the public class Repository, and then used the little lightbulb for suggestions. 
+		Now it's recognizing everything and everything is back where it should be??????????
+		It's working... but I don't know why it wasn't working in the first place. 
+			THat's frustrating but also not?
+1919 - Finished slide 10, comitting to github.
