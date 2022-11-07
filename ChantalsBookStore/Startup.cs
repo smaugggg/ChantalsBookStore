@@ -1,4 +1,5 @@
 using ChantalsBookStore.DataAccess.Data;
+using ChantalsBooks.DataAccess.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,7 @@ namespace ChantalsBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -66,5 +68,8 @@ namespace ChantalsBookStore
                 endpoints.MapRazorPages();
             });
         }
+    }
+
+    internal interface IUnitOfWork {
     }
 }

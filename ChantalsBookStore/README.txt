@@ -85,3 +85,27 @@ Assignment 2
 		It's working... but I don't know why it wasn't working in the first place. 
 			THat's frustrating but also not?
 1919 - Finished slide 10, comitting to github.
+1942 - Created the SP_Call interface and Class
+2005 - After making the UnitOfWork interface and Class, the problem I seem to be having is in the startup update on slide 12
+		It's saying that theres something wrong with the implementation but I'm not sure how to fix it.
+	>>>		error CS0311: The type 'ChantalsBooks.DataAccess.Repository.UnitOfWork' cannot be used as type parameter 'TImplementation' in the generic 
+	>>>		type or method 'ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(IServiceCollection)'. There is no implicit reference 
+	>>>		conversion from 'ChantalsBooks.DataAccess.Repository.UnitOfWork' to 'ChantalsBookStore.IUnitOfWork'.
+	According to the error page: 
+			To correct this error  change the argument you are using to create the class.
+			If you own the class, you can remove the constraint or else do something to enable an implicit reference or identity conversion. 
+			For example, you can make the second type inherit from the first.
+
+		I'm honestly not sure what to do here. Both interface and class match the ppt exactly. 
+2021 - I can't do anything else because the... IUnitOfWork is less accessible? 
+		I've already remade the IUnitofWork and UnitOfWork interface/class 3 times and I don't know what I did that's different from the ppt
+
+2026 - Created the index page in the views>category folder
+		There is no Generic HTML in the Assignment 2 files folder with which to replace it with at this time. 
+
+2028 - I guess it just doesn't work...
+		I need to ask Andrew about this, but with funeral stuff idk if I'll see him in person
+			
+
+TO-DO
+	Views > Category > Index.cshtml -- modify generic HTML from the Category Index View text file on blackboard.
