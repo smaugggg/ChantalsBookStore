@@ -7,6 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using ChantalsBooks.DataAccess;
+using ChantalsBooks.DataAccess.Repository.IRepository;
+using ChantalsBooks.Models;
+using ChantalsBookStore.DataAccess.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChantalsBooks.DataAccess.Repository {
     public class CategoryRepository : Repository<Category>, ICategoryRepository {

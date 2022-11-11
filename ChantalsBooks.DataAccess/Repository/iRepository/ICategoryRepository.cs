@@ -1,9 +1,7 @@
-﻿using ChantalsBooks.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
-using System.Linq.Expressions;
+using ChantalsBooks.Models;
 
 namespace ChantalsBooks.DataAccess.Repository.IRepository {
     public interface ICategoryRepository : IRepository<Category> {

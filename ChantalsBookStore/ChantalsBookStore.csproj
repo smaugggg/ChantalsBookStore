@@ -33,9 +33,5 @@
     <ProjectReference Include="..\ChantalsBooks.Utility\ChantalsBooks.Utility.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-  </ItemGroup>
-
 
 </Project>
