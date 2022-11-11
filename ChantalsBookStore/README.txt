@@ -130,4 +130,11 @@ Assignment 2
 2012 - Remade the unitofwork interface and class just in case, and the AddScoped is still causing me a problem for some reason. 
 		commentined out that line for now cause despite googling, I'm not sure what the issue is.
 
-			
+	20221111
+1542 - I was looking at my startup file and noticed that there was an 'internal interface IUnitOfWork' at the bottom and I got rid of that 
+		And now AddScoped works. 
+		I can't believe it was that silly.
+1603 - Got everything running with the Upsert/Index Category stuff
+		The colours look a bit off, but I might just have to play with that later. I'm just glad it's working.
+1416 - Completed through slide 21, category.js updated with delete function. 
+		Committing to GitHub

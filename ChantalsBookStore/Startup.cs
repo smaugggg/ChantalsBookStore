@@ -1,6 +1,6 @@
-using ChantalsBookStore.DataAccess.Data;
 using ChantalsBooks.DataAccess.Repository;
 using ChantalsBooks.DataAccess.Repository.IRepository;
+using ChantalsBookStore.DataAccess.Data;
 using ChantalsBooks.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -72,6 +72,5 @@ namespace ChantalsBookStore
         }
     }
 
-    internal interface IUnitOfWork {
-    }
+
 }
