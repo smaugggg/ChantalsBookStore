@@ -9,7 +9,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChantalsBooks.DataAccess.Repository {
-    class SP_Call : ISP_Call {
+    public class SP_Call : ISP_Call {
         // access the database
         private readonly ApplicationDbContext _db;
         private static string ConnectionString = ""; 
@@ -19,7 +19,6 @@ namespace ChantalsBooks.DataAccess.Repository {
             _db = db;
             ConnectionString = db.Database.GetDbConnection().ConnectionString;
         }
-
 
         public void Dispose() {
             _db.Dispose();

@@ -126,7 +126,8 @@ Assignment 2
 1933 - Created the IRepository interface and Repository class using file in Assignment 2 folder.
 1941 - CategoryRepository Interface and Class created. 
 		Build: 2 succeeded, 0 failed, 2 up-to-date, 0 skipped
-
-
+2001 - the service.AddScoped in startup is still throwing an error, and I'm not sure what thats about.
+2012 - Remade the unitofwork interface and class just in case, and the AddScoped is still causing me a problem for some reason. 
+		commentined out that line for now cause despite googling, I'm not sure what the issue is.
 
 			

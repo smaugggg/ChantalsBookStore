@@ -1,5 +1,7 @@
 using ChantalsBookStore.DataAccess.Data;
 using ChantalsBooks.DataAccess.Repository;
+using ChantalsBooks.DataAccess.Repository.IRepository;
+using ChantalsBooks.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

@@ -3,11 +3,9 @@ using ChantalsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using ChantalsBooks.Models;
-using ChantalsBookStore;
 
 namespace ChantalsBooks.DataAccess.Repository {
-    public class UnitOfWork { 
+    public class UnitOfWork : IUnitOfWork {
         private readonly ApplicationDbContext _db;
         public UnitOfWork(ApplicationDbContext db) {
             _db = db;
@@ -21,9 +19,8 @@ namespace ChantalsBooks.DataAccess.Repository {
         public void Dispose() {
             _db.Dispose();
         }
-
         public void Save() {
             _db.SaveChanges();
         }
-    } 
+    }
 }
