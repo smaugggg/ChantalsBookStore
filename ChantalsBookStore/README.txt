@@ -138,3 +138,9 @@ Assignment 2
 		The colours look a bit off, but I might just have to play with that later. I'm just glad it's working.
 1416 - Completed through slide 21, category.js updated with delete function. 
 		Committing to GitHub
+
+	20221115
+0804 - Good morning
+		I just have to change the colours on my table cause it looks bad
+0842 - Colours around the table are still a little hard to read, but it definitely looks better
+		Ready to be graded today
