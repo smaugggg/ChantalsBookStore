@@ -1,9 +1,8 @@
-﻿@{
+﻿@model ChantalsBooks.Models.Category;
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     var title = "Create Category";
 }
-
-<title>@ViewData[title]</title>
 
 <form method="post">
     <div class="row p-3 border">
@@ -12,16 +11,16 @@
             title = "Edit Category";
         }
         <div class="col-12 border-bottom">
-            <h2 class="text-primary">TITLE</h2>
+            <h2 class="text-primary">@title</h2>
         </div>
         <div class="col-8 pt-4">
             <div class="form-group row">
                 <div class="col-4">
-                    <label for="Name"></label>
+                    <label asp-for="Name"></label>
                 </div>
                 <div class="col-8">
-                    <input for="Name" class="form-control" />
-                    <span validation-for="Name" class="text-danger"></span>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row">
@@ -38,5 +37,5 @@
 </form>
 
 @section Scripts {
-<partial name="_ValidationScriptsPartial.cshtml" />
+<partial name="_ValidationScriptsPartial" />
 }
