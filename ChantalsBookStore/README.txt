@@ -160,3 +160,24 @@ Assignment 2
 		CoverTypeController.cs created
 2054 - Covertype Index and Upsert created.
 		coverType.js copied from Category.js, just replaced all instances of 'category' with 'coverType'
+2107 - Category index page is running fine, but CoverType index page is throwing an error
+		I copied the covertype index page from the category page so I'm not 100% sure why one works and the other doesn't
+		It's highlighting line 56 of CoverTypeController as the problem
+		But it's the same as Category controller. V confusing.
+		"System.NullReferenceException
+  HResult=0x80004003
+  Message=Object reference not set to an instance of an object.
+  Source=ChantalsBookStore
+  StackTrace:
+   at ChantalsBookStore.Areas.Admin.Controllers.CoverTypeController.Upsert(CoverType coverType) in C:\Users\Chantal\source\repos\ChantalsBookStore\ChantalsBookStore\Areas\Admin\Controllers\CoverTypeController.cs:line 40
+"
+2118 - Found the problem! I forgot to add CoverType = new CoverTypeRepository(_db) to UnitOfWork.cs
+		Moving on to the Product section
+2124 - Product.cs model created and added to ApplicationDbContext
+		Migration created: 20221118022352_AddProductsToDb.cs
+		Database updated
+		Confirmed appearence of Products table in the database.
+2127 - Updated Product.cs model to make Title, ISBN, and Author [Required]
+		Migration created: 20221118022606_addValidationToProduct.cs
+		Database updated
+		Confirmed updated of table in SOE

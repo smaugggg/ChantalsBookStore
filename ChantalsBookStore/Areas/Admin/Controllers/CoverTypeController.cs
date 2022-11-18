@@ -53,7 +53,6 @@ namespace ChantalsBookStore.Areas.Admin.Controllers {
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll() {
-            // return NotFound();
             var allObj = _unitOfWork.CoverType.GetAll();
             return Json(new { data = allObj });
         }
