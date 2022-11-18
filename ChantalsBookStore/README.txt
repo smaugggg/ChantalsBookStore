@@ -188,3 +188,6 @@ Assignment 2
 2212 - Product Index Page created and run. 
 		Exception happened as predicted.
 		==== PPT2 COMPLETED ====
+2215 - Product upsert.cshtml created and copied from ASsignment2 - Files
+2221 - upsert.cshtml looks great!
+		All done!

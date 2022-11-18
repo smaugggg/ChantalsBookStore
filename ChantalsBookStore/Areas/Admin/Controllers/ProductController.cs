@@ -48,7 +48,7 @@ namespace ChantalsBookStore.Areas.Admin.Controllers {
             return View(productVM);
         }
 
-        /*[HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(Product product) {
             if (ModelState.IsValid) {
@@ -62,7 +62,7 @@ namespace ChantalsBookStore.Areas.Admin.Controllers {
                 return RedirectToAction(nameof(Index));
             }
             return View(product);
-        }*/
+        }
 
         // API Calls
         #region API CALLS
