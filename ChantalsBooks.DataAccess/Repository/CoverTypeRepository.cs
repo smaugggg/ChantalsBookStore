@@ -10,19 +10,16 @@ using System.Text;
 using ChantalsBooks.DataAccess;
 
 namespace ChantalsBooks.DataAccess.Repository {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository {
-
+    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository {
         private readonly ApplicationDbContext _db;
-        public CategoryRepository(ApplicationDbContext db) : base(db) {
+        public CoverTypeRepository(ApplicationDbContext db) : base(db) {
             _db = db;
         }
-
-        public void Update(Category category) {
-            // use .NET LINQ to retrieve the first or default category object, 
-            // then pass the id as a generic entity which matches the category ID
-            var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
+        
+        public void Update(CoverType coverType) {
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
             if(objFromDb != null) {
-                objFromDb.Name = category.Name;
+                objFromDb.Name = coverType.Name;
                 _db.SaveChanges();
             }
         }

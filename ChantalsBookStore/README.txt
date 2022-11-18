@@ -144,3 +144,19 @@ Assignment 2
 		I just have to change the colours on my table cause it looks bad
 0842 - Colours around the table are still a little hard to read, but it definitely looks better
 		Ready to be graded today
+
+	
+	20221117
+2026 - ========== Build: 4 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+		Ready to begin part 3
+2034 - CoverType.cs model created and added to ApplicationDbContext
+		Migration created: 20221118013336_AddCoverTypetoDb.cs
+		Database updated
+		Confirmed appearence of CoverTypes table in the database.
+2043 - Interface and Class created for CoverTypeRepository.cs
+		Added to UnitOfWork
+		Database updated and build run to ensure it works. checkmark!
+2050 - CoverType added to navbar
+		CoverTypeController.cs created
+2054 - Covertype Index and Upsert created.
+		coverType.js copied from Category.js, just replaced all instances of 'category' with 'coverType'
