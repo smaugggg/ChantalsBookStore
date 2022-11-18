@@ -181,3 +181,10 @@ Assignment 2
 		Migration created: 20221118022606_addValidationToProduct.cs
 		Database updated
 		Confirmed updated of table in SOE
+2134 - Added Interface and Class for ProductRepository
+		Updated UnitOfWork Class and Interface to include Product
+		==== PPT 1 COMPLETED ====
+2143 - Product Controller created
+2212 - Product Index Page created and run. 
+		Exception happened as predicted.
+		==== PPT2 COMPLETED ====
