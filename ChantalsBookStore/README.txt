@@ -191,3 +191,6 @@ Assignment 2
 2215 - Product upsert.cshtml created and copied from ASsignment2 - Files
 2221 - upsert.cshtml looks great!
 		All done!
+
+	20221127
+1623 - Added product view to home page per grading requirements
