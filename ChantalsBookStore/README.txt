@@ -194,3 +194,20 @@ Assignment 2
 
 	20221127
 1623 - Added product view to home page per grading requirements
+
+
+	20221209 
+0033 - Final look at the project to refine/get everything working. 
+
+0037 - Error received when trying to make a grid layout for my main index page 
+		System.NullReferenceException: 'Object reference not set to an instance of an object.'
+		Microsoft.AspNetCore.Mvc.Razor.RazorPage<TModel>.Model.get returned null.
+	This slightly confuses me because the way I've done it is pretty much the same as what the example in part 4 was. 
+	This has been the error I've been receiving every time I try to do this. 
+
+	Something that really doesn't make sense is when I hover of @product.Title, and click the generated link to where it's calling from, it IS trying to grab
+	from the Product class item... So clearly it's sending itself to the product class... so why is it saying that the object reference doesn't exist?
+
+0043 - I've commented out the grid divs, but left it in the Areas/Customers/Views/Home/Index.cshtml for Mr Steele to see if he so chooses
+		At least then he'll know what I was trying to accomplish. 
+
